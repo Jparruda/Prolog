@@ -17,6 +17,7 @@ mulher(gal).
 pai(ivo, eva).
 pai(rai, noe).
 pai(gil, clo).
+pai(gil, rai).
 pai(gil, ary).
 pai(ary, gal).
 
@@ -24,6 +25,7 @@ pai(ary, gal).
 mãe(ana, eva).
 mãe(eva, noe).
 mãe(bia, clo).
+mãe(bia, rai).
 mãe(bia, ary).
 mãe(lia, gal).
 
