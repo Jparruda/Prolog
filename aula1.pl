@@ -26,3 +26,16 @@ mãe(eva, noe).
 mãe(bia, clo).
 mãe(bia, ary).
 mãe(lia, gal).
+
+irmão(X, Y) :- homem(Y),
+               pai(Z, X),
+               pai(Z, Y),
+               X \== Y.
+
+gerou(X, Y) :- pai(X, Y);
+			   mãe(X, Y).
+
+irmã(X, Y) :- mulher(Y),
+              pai(Z, X),
+              pai(Z, Y),
+              X \== Y.
