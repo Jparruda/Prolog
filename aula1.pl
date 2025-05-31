@@ -21,13 +21,13 @@ pai(gil, rai).
 pai(gil, ary).
 pai(ary, gal).
 
-% Definição de mães
-mãe(ana, eva).
-mãe(eva, noe).
-mãe(bia, clo).
-mãe(bia, rai).
-mãe(bia, ary).
-mãe(lia, gal).
+% Definição de maes
+mae(ana, eva).
+mae(eva, noe).
+mae(bia, clo).
+mae(bia, rai).
+mae(bia, ary).
+mae(lia, gal).
 
 gerou(X, Y) :- pai(X, Y);
-			   mãe(X, Y).
+			   mae(X, Y).
