@@ -29,25 +29,5 @@ mãe(bia, rai).
 mãe(bia, ary).
 mãe(lia, gal).
 
-irmão(X, Y) :- homem(X),
-               (pai(Z, X), pai(Z, Y));
-               (mãe(W, X), mãe(W, Y)),
-               X \== Y.
-
-
-
 gerou(X, Y) :- pai(X, Y);
 			   mãe(X, Y).
-
-irmã(X, Y) :- mulher(Y),
-              pai(Z, X),
-              pai(Z, Y),
-              X \== Y.
-
-avô(X, Y) :- homem(X),
-    		 pai(X, Z),
-    		 (pai(Z, Y); mãe(Z, Y)).
-
-tio(X, Y) :- homem(X),
-             (pai(Z, Y); mãe(Z, Y)), 
-             irmão(X, Z).
