@@ -31,3 +31,27 @@ mae(lia, gal).
 
 gerou(X, Y) :- pai(X, Y);
 			   mae(X, Y).
+
+irmão(X, Y) :- (pai(Z, X), pai(Z, Y));
+               (mae(W, X), mae(W, Y)),
+			   X \== Y.
+irmã(X, Y) :- (pai(Z, X), pai(Z, Y));
+              (mae(W, X), mae(W, Y)),
+			   X \== Y.
+avô(X, Y) :- homem(X),
+    		 pai(X, Z),
+    		 (pai(Z, Y); mae(Z, Y)).
+
+avó(X, Y) :- mulher(X),
+    		 mae(X, Z),
+    		 (pai(Z, Y); mae(Z, Y)).
+
+tio(X, Y) :- homem(X),
+             (pai(Z, Y); mae(Z, Y)), 
+             irmão(X, Z).
+
+tia(X, Y) :- mulher(X),
+             (pai(Z, Y); mae(Z, Y)), 
+             irmã(X, Z).
+
+% o cut é usado para podar a ávore de verificação (!)
