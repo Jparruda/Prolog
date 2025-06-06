@@ -29,6 +29,8 @@ mae(bia, rai).
 mae(bia, ary).
 mae(lia, gal).
 
+% regras
+
 gerou(X, Y) :- pai(X, Y);
 			   mae(X, Y).
 
