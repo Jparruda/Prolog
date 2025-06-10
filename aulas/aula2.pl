@@ -12,7 +12,7 @@ func(3, ivo, 903.50).
 dep(1, ary).
 dep(3, raí).
 dep(3, eva).
-
+% TODO:ORGANIZAR AS QUESTÕES
 joga(ana,volei).
 joga(bia,tenis).
 joga(ivo,basquete).
