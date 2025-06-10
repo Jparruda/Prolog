@@ -18,3 +18,13 @@ joga(bia,tenis).
 joga(ivo,basquete).
 joga(eva,volei).
 joga(leo,tenis).
+
+nomes = ['Ana', 'Bia', 'Ivo', 'Lia', 'Eva', 'Ary']
+sexo = [fem, fem, masc, fem, fem, masc]
+idade = [23, 19, 22, 17, 28, 25]
+altura = [1.55, 1.71, 1.80, 1.85, 1.75, 1.72]
+peso = [56.0, 61.3, 70.5, 57.3, 68.7, 68.9]
+
+num(N,positivo) :- N>0.
+num(0,nulo).
+num(N,negativo) :- N<0.
